@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Barbie Task Tracker</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+  <div class="container">
+    <h1>🎀💖 Barbie Task Tracker 💅🦄</h1>
+    <form id="todo-form">
+      <input type="text" id="task-input" placeholder="Apa rencanamu?" required />
+      <input type="date" id="date-input" required />
+      <button type="submit">💗 Add Task</button>
+    </form>
+
+    <div class="filter-section">
+        <input type="date" id="filter-date" />
+        <button id="filter-btn">🔍🩰 Filter</button>
+        <button id="delete-all-btn">🧹 Delete All</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>💌 Task</th>
+                <th>🗓 Due date</th>
+                <th>🌟 Status</th>
+                <th>🌸Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="task-list">
+            <tr><td colspan="4" class="empty">🦄 No mission yet.</td></tr>
+        </tbody>
+    </table>
+  </div>
+  <script src="../js/script.js"></script>
 </body>
 </html>
